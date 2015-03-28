@@ -2,7 +2,6 @@
 
 [![Build Status](https://img.shields.io/travis/poise/poise-service-spechelper.svg)](https://travis-ci.org/poise/poise-service-spechelper)
 [![Gem Version](https://img.shields.io/gem/v/poise-service-spechelper.svg)](https://rubygems.org/gems/poise-service-spechelper)
-[![Code Climate](https://img.shields.io/codeclimate/github/poise/poise-service-spechelper.svg)](https://codeclimate.com/github/poise/poise-service-spechelper)
 [![Gemnasium](https://img.shields.io/gemnasium/poise/poise-service-spechelper.svg)](https://gemnasium.com/poise/poise-service-spechelper)
 [![License](https://img.shields.io/badge/license-Apache_2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
