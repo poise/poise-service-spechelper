@@ -116,6 +116,16 @@ module PoiseService
             its(:to_i) { is_expected.to eq json_http("http://localhost:#{base_port}/")['pid'] }
             it { Process.kill(0, subject.to_i) }
           end # /describe pid file
+
+          describe 'change service' do
+            describe port(base_port+5) do
+              it { is_expected.to_not be_listening }
+            end
+
+            describe port(base_port+6) do
+              it { is_expected.to be_listening }
+            end
+          end # /describe change service
         end # /shared_examples a poise_service_test
       end # /def install
     end
