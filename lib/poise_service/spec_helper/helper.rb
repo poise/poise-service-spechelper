@@ -74,7 +74,7 @@ module PoiseService
 
             describe 'process environment' do
               subject { json_http("http://localhost:#{base_port+2}/") }
-              it { expect { subject }.to raise_error }
+              it { expect { subject }.to raise_error Errno::ECONNREFUSED }
             end
           end # /describe noterm service
 
