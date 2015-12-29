@@ -45,6 +45,9 @@ module PoiseService
               subject { json_http("http://localhost:#{base_port}/") }
               it { is_expected.to include({
                 'user' => 'root',
+                'euser' => 'root',
+                'group' => 'root',
+                'egroup' => 'root',
                 'directory' => '/',
               }) }
             end
@@ -60,6 +63,9 @@ module PoiseService
               subject { json_http("http://localhost:#{base_port+1}/") }
               it { is_expected.to include({
                 'user' => 'poise',
+                'euser' => 'poise',
+                'group' => 'poise',
+                'egroup' => 'poise',
                 'directory' => '/tmp',
                 'environment' => include({'POISE_ENV' => name}),
               }) }
